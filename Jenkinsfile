@@ -8,7 +8,7 @@ pipeline {
 stages{
         stage('Build'){
         when {
-            branch 'master'
+            branch 'main'
             steps {
                 sh 'mvn install'
             }
@@ -21,7 +21,7 @@ stages{
         }
         }
         
-        stage('Build'){
+        stage('Build1'){
         when {
             branch 'branch1'
             steps {
@@ -37,5 +37,5 @@ stages{
         }
       
 
-} 
+  } 
 }
