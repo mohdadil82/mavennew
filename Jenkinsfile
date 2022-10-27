@@ -5,7 +5,7 @@ pipeline {
          pollSCM('* * * * *') // Polling Source Control
      }
 
-stages{
+    stages{
         stage('Build'){
         when {
             branch 'main'
@@ -18,7 +18,7 @@ stages{
                     sh 'cp **/* /var/lib/tomcat9/webapps/'
                 }
             }
-        }
+         }
         }
         
         stage('Build1'){
@@ -34,7 +34,7 @@ stages{
                 }
             }
         }
-        }
+     }
       
 
   } 
